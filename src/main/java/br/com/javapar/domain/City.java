@@ -16,7 +16,18 @@ public class City extends GenericDomain
 	@ManyToOne
 	@JoinColumn(nullable = false)
 	private States states;
-
+	
+	public City()
+	{
+		
+	}
+	
+	public City(String cityName, States states)
+	{
+		this.cityName = cityName;
+		this.states = states;
+	}
+	
 	public String getCityName() 
 	{
 		return cityName;

@@ -15,6 +15,16 @@ public class States extends GenericDomain
 	@Column(nullable = false, length = 2)
 	private String acronymStates;
 	
+	public States()
+	{
+		
+	}
+	
+	public States(String nameStates, String acronymStates)
+	{
+		this.nameStates = nameStates; 
+		this.acronymStates = acronymStates;
+	}
 	
 	public String getNameStates()
 	{
